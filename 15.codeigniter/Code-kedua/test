@@ -1,0 +1,6 @@
+SELECT NAMA_DOSEN.tb_dosen, nama_kelas.tb_kelas, NAMA_MATAKULIAH.tb_matakuliah, KULIAH_JAM_MENGAJAR.tb_jadwal_kuliah,\
+SEMESTER.tb_jadwal_kuliah, YEAR_MATAKULIAH.tb_jadwal_kuliah FROM tb_dosen
+JOIN tb_jadwal_kuliah ON CODE_DOSEN.tb_dosen = CODE_DOSEN.tb_jadwal_kuliah
+JOIN tb_matakuliah ON ID_MATAKULIAH.tb_jadwal_kuliah = ID_MATAKULIAH.tb_matakuliah
+JOIN tb_kelas ON ID_KELAS.tb_jadwal_kuliah = ID_KELAS.tb_kelas
+
